@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/elements/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="css/elements/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>Home</title>
+</head>
+<body>
+    <div class="logo"><img src="css/elements/logo.png" class="img-fluid" alt="img-fluid"></div>
+<div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="css/elements/wedding1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="css/elements/family1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="css/elements/nature1.jpg" style="width:100%" height="400px">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prices.html">Prices and Packages</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Galleries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="wedding.html">Weddings</a></li>
+              <li><a class="dropdown-item" href="family.html">Family</a></li>
+              <li><a class="dropdown-item" href="nature.html">Nature</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="h1-about">About me!</h1>
+<div class="container1">Jo Smith Photography is a leading nature photographer with over eight years’
+    experience working within landscape and natural world photography, specialising in
+    the landscapes of Scotland.
+    Jo’s style has developed organically through photographing the wide variety of
+    landscapes and seascapes found around Scotland. Her bold, colourful landscape
+    photographs are always in-demand. 
+  
+  </div>
+<!-- 
+  <button class="trigger">Subscribe to my newsletter</button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">x</span>
+        <h1>Hello, I am a modal!</h1>
+    </div>
+</div> -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Subscirbe to my newsletter
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <label for="lname">Email:</label><br>
+          <input type="text" id="email" name="email" value="email"><br><br>
+          <input type="submit" value="Submit" class="sub-button">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <section class="mid-content-section mt-3">
+    <div class="container">
+        <div class="row text-center text-light g-2">
+            <div class="col-lg-4">
+                <div class="p-5 lead fs-3">
+                <h1 class="lead fs-3">HEADING</h1>
+                <i class="bi bi-xbox" style="font-size:40px;"></i>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum?</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="p-5 lead fs-3">
+                  <h1 class="lead fs-3">HEADING</h1>
+                <h1 class="lead fs-3"></h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eius amet perspiciatis labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum?</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="p-5 lead fs-3">
+                  <h1 class="lead fs-3">HEADING</h1>
+                <h3 class="lead fs-3"></h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora possimus aliquid magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem molestias ex voluptatum?</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<div class="container text-center">
+  <h1>Testimonials</h1>
+  <div class="row row-cols-2">
+    <div class="col1"><h2 class="h2-testimonial">Janice M. 36</h2><p>Facilisi purus lacinia malesuada turpis. Tempor. Vivamus primis. Fermentum tellus cubilia ultrices fusce curae; rhoncus ante. Sollicitudin quisque tristique nullam suspendisse tortor senectus facilisis, nullam, facilisis mi amet convallis vestibulum Lacinia fermentum pellentesque justo urna nisi consectetuer eros. Lectus ipsum auctor venenatis risus varius pellentesque mollis cursus pellentesque sagittis erat dignissim posuere hendrerit ultricies maecenas feugiat nulla nec sed dapibus diam lectus conubia ridiculus eget est euismod ante blandit ac massa justo ornare auctor varius taciti iaculis tempus varius per risus cubilia, ornare diam. Nulla ornare. Dapibus interdum netus. Senectus sodales lectus. Eu vel torquent dis viverra. Molestie faucibus tempor.</p></div>
+    <div class="col2"><h2 class="h2-testimonial1">Hubert P. 28</h2><p>Facilisi purus lacinia malesuada turpis. Tempor. Vivamus primis. Fermentum tellus cubilia ultrices fusce curae; rhoncus ante. Sollicitudin quisque tristique nullam suspendisse tortor senectus facilisis, nullam, facilisis mi amet convallis vestibulum Lacinia fermentum pellentesque justo urna nisi consectetuer eros. Lectus ipsum auctor venenatis risus varius pellentesque mollis cursus pellentesque sagittis erat dignissim posuere hendrerit ultricies maecenas feugiat nulla nec sed dapibus diam lectus conubia ridiculus eget est euismod ante blandit ac massa justo ornare auctor varius taciti iaculis tempus varius per risus cubilia, ornare diam. Nulla ornare. Dapibus interdum netus. Senectus sodales lectus. Eu vel torquent dis viverra. Molestie faucibus tempor.</p></div>
+    <div class="col3"><h2 class="h2-testimonial1">Thomas K. 49</h2><p>Facilisi purus lacinia malesuada turpis. Tempor. Vivamus primis. Fermentum tellus cubilia ultrices fusce curae; rhoncus ante. Sollicitudin quisque tristique nullam suspendisse tortor senectus facilisis, nullam, facilisis mi amet convallis vestibulum Lacinia fermentum pellentesque justo urna nisi consectetuer eros. Lectus ipsum auctor venenatis risus varius pellentesque mollis cursus pellentesque sagittis erat dignissim posuere hendrerit ultricies maecenas feugiat nulla nec sed dapibus diam lectus conubia ridiculus eget est euismod ante blandit ac massa justo ornare auctor varius taciti iaculis tempus varius per risus cubilia, ornare diam. Nulla ornare. Dapibus interdum netus. Senectus sodales lectus. Eu vel torquent dis viverra. Molestie faucibus tempor.</p></div>
+    <div class="col1"><h2 class="h2-testimonial">Rachel M. 22</h2><p>Facilisi purus lacinia malesuada turpis. Tempor. Vivamus primis. Fermentum tellus cubilia ultrices fusce curae; rhoncus ante. Sollicitudin quisque tristique nullam suspendisse tortor senectus facilisis, nullam, facilisis mi amet convallis vestibulum Lacinia fermentum pellentesque justo urna nisi consectetuer eros. Lectus ipsum auctor venenatis risus varius pellentesque mollis cursus pellentesque sagittis erat dignissim posuere hendrerit ultricies maecenas feugiat nulla nec sed dapibus diam lectus conubia ridiculus eget est euismod ante blandit ac massa justo ornare auctor varius taciti iaculis tempus varius per risus cubilia, ornare diam. Nulla ornare. Dapibus interdum netus. Senectus sodales lectus. Eu vel torquent dis viverra. Molestie faucibus tempor.</p></div>
+  </div>
+</div>
+
+<footer>
+<section class="left"><p>987 Brook Street<br>
+  Dundee<br>
+  DD5 2EA
+  </p></section>
+<section class="centre"><p>enquire@josmithphoto.com</p></section>
+<section class="right"><p>Twitter @josmithphoto <br> 
+  Instagram @josmithphoto
+</p></section>
+
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
