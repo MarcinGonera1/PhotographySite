@@ -387,6 +387,10 @@ h1{
   text-align: center;
 }
 
+.nav-link{
+  color: $Color2;
+}
+
 .container-fluid{
   background-color: $Color5;
 
@@ -394,6 +398,14 @@ h1{
 
 .dropdown-menu{
   background-color: $Color5;
+}
+
+.dropdown-item{
+  color: $Color2;
+}
+
+.dropdown-item:hover{
+  background-color: $Color6;
 }
 
 

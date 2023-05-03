@@ -407,12 +407,24 @@ h1 {
   text-align: center;
 }
 
+.nav-link {
+  color: #F0F5F7;
+}
+
 .container-fluid {
   background-color: #565962;
 }
 
 .dropdown-menu {
   background-color: #565962;
+}
+
+.dropdown-item {
+  color: #F0F5F7;
+}
+
+.dropdown-item:hover {
+  background-color: #AACEF2;
 }
 
 .nav-link:hover {
